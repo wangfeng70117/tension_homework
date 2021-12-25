@@ -173,7 +173,6 @@ class MPMSolver:
             Xp = self.fluid_surface_solver.surface_particles.position[p] / self.dx
             base = int(Xp - 0.5)
             fx = Xp - base
-            mark_base = int(self.fluid_surface_solver.surface_particles.position[p] / self.surface_dx)
             # Quadratic kernels  [http://mpm.graphics   Eqn. 123, with x=fx, fx-1,fx-2]
             w = [0.5 * (1.5 - fx) ** 2, 0.75 - (fx - 1) ** 2, 0.5 * (fx - 0.5) ** 2]
             normal = self.fluid_surface_solver.linear_interpolation_normal(
