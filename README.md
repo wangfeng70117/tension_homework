@@ -29,6 +29,10 @@ Windows10, Taichi 0.8.5, python 3.7.3
 ## 效果展示
 ![Image](https://github.com/wangfeng70117/tension_homework/blob/main/tension_result.gif?raw=true)
 
+如果加上简单的碰撞检测算法：
+![add_collision](https://user-images.githubusercontent.com/46859758/147384259-4aaad63e-dcb8-43aa-960e-a2e5c41a9145.png)
+
+
 
 因为构建Level Set十分消耗性能，所以每帧导出的ply文件，然后用houdini渲染了一下。
 
