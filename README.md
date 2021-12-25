@@ -70,10 +70,12 @@ Windows10, Taichi 0.8.5, python 3.7.3
 
 1. Sign Distance field（SDF）
 
-   在我眼中SDF和Level Set是差不多的东西，用来构建隐式表面，所谓的隐式曲面就是根据某个表达式来确定一个曲面，比如，圆形的隐式曲面就是：![sdf1](https://user-images.githubusercontent.com/46859758/147384004-1e16af51-a091-4c79-acfd-221acc7f5371.png)
+   在我眼中SDF和Level Set是差不多的东西，用来构建隐式表面，所谓的隐式曲面就是根据某个表达式来确定一个曲面，比如，圆形的隐式曲面就是：![c1](https://user-images.githubusercontent.com/46859758/147384020-445dad04-71c8-46e3-8395-72dc8deee71f.png)
 
 
-   那么空间中任意一点(x, y)的SDF的值就是:![sdf2](https://user-images.githubusercontent.com/46859758/147384006-22aa7dbc-f965-400e-99bb-6cee8f81063d.png)
+
+   那么空间中任意一点(x, y)的SDF的值就是:![c2](https://user-images.githubusercontent.com/46859758/147384022-92dce984-578f-40cf-a73a-6ec22fe12105.png)
+
 
 
 
