@@ -71,10 +71,10 @@ Windows10, Taichi 0.8.5, python 3.7.3
 1. Sign Distance field（SDF）
 
    在我眼中SDF和Level Set是差不多的东西，用来构建隐式表面，所谓的隐式曲面就是根据某个表达式来确定一个曲面，比如，圆形的隐式曲面就是：
-  ![c1](https://user-images.githubusercontent.com/46859758/147383550-ad1cbca1-530f-443b-a42c-e1ecb4c0627f.png)
+     ![c1](https://user-images.githubusercontent.com/46859758/147383550-ad1cbca1-530f-443b-a42c-e1ecb4c0627f.png)
 
    那么空间中任意一点(x, y)的SDF的值就是:
-![c2](https://user-images.githubusercontent.com/46859758/147383554-10444651-9186-4dbd-b518-cf8a9b1141f9.png)
+     ![c2](https://user-images.githubusercontent.com/46859758/147383554-10444651-9186-4dbd-b518-cf8a9b1141f9.png)
 
 
 
@@ -85,7 +85,7 @@ Windows10, Taichi 0.8.5, python 3.7.3
 这样，空间中所有SDF为0的点就构成了一个曲面，这种曲面就是隐式曲面。
 
 那么给定表面上任意一点，这一点的法向量为
-![c3](https://user-images.githubusercontent.com/46859758/147383561-9209888e-2195-4789-b170-fd905f716555.png)
+ ![c3](https://user-images.githubusercontent.com/46859758/147383561-9209888e-2195-4789-b170-fd905f716555.png)
 
 为什么法线方向可以这样表示呢？因为梯度方向就是标量场数值变化最快的方向，SDF中每一点的值都是距离表面的最小值，从物理意义上理解，距离最小就是垂直于表面，恰好是梯度方向就是法线方向。
 
