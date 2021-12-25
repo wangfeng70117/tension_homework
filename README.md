@@ -81,8 +81,9 @@ f(x,y)=x^2 + y^2 - r^2
 $$
 
 如下图所示：
+![sdf1](https://user-images.githubusercontent.com/46859758/147383663-a71532ce-2fe8-4aa2-bbf3-0c024f911be8.png)
 
-![image-20211225181559876](C:\Users\wf\AppData\Roaming\Typora\typora-user-images\image-20211225181559876.png)
+
 
 这样，空间中所有SDF为0的点就构成了一个曲面，这种曲面就是隐式曲面。
 
@@ -95,18 +96,18 @@ $$
 那么任意一点的曲率，只需要对SDF求拉普拉斯算子就可以了。
 
 隐式曲面也是可以合并的，如下图：
+![sdf2](https://user-images.githubusercontent.com/46859758/147383670-8c4cc9ad-4afb-487b-90ed-a1bf71526ced.png)
 
-![image-20211225181805480](C:\Users\wf\AppData\Roaming\Typora\typora-user-images\image-20211225181805480.png)
+
 
 2. Marching Cube
 
    Marching Cube是一种构建显式曲面的方法，我们将空间分割为一个个细小的网格单元，然后每个网格节点上都有网格节点的SDF的值（当然也可以用别的场，比如速度场），如果网格节点上的标量值大于等值面的值则标记的“1”,如果小于等值面的值就标记为“0”。
 
    如下图：
+![mc1](https://user-images.githubusercontent.com/46859758/147383673-d98f341b-be2c-4d27-8baf-ef8aeb2bf886.png)
+![mc2](https://user-images.githubusercontent.com/46859758/147383675-082e7177-4cd4-4e06-a4fb-3d2e63e7b8f1.png)
 
-   ![image-20211225182039634](C:\Users\wf\AppData\Roaming\Typora\typora-user-images\image-20211225182039634.png)
-
-   ![image-20211225182141846](C:\Users\wf\AppData\Roaming\Typora\typora-user-images\image-20211225182141846.png)
 
 黑点处的标记为“1”，然后就根据网格中黑点处的标记，绘制显示表面。
 
