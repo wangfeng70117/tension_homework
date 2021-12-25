@@ -23,8 +23,7 @@ Windows10, Taichi 0.8.5, python 3.7.3
 运行main.py即可。
 
 ## 效果展示
-[!Image]
-https://github.com/wangfeng70117/tension_homework/blob/main/tension_result.gif
+[!Image](https://github.com/wangfeng70117/tension_homework/blob/main/tension_result.gif)
 因为构建Level Set十分消耗性能，所以每帧导出的ply文件，然后用houdini渲染了一下。
 
 ## 整体结构
