@@ -101,8 +101,8 @@ $$
 2. Marching Cube
 
    Marching Cube是一种构建显式曲面的方法，我们将空间分割为一个个细小的网格单元，然后每个网格节点上都有网格节点的SDF的值（当然也可以用别的场，比如速度场），如果网格节点上的标量值大于等值面的值则标记的“1”,如果小于等值面的值就标记为“0”。
-
    如下图：
+   
 ![mc1](https://user-images.githubusercontent.com/46859758/147383488-7a978abe-8d4d-42ee-8a64-564501527d6b.png)
 ![mc2](https://user-images.githubusercontent.com/46859758/147383491-ec2aef13-25cd-4a68-8ce8-dee72ad9fdf3.png)
 
